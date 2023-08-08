@@ -1,0 +1,1071 @@
+/* COACH HEADER */
+
+#coach-header
+{
+    position: sticky;
+    top:0;
+    background: #0d0d0d;
+    transition: all 0.5s;
+    z-index: 100;
+    height: 30px;
+    text-align: center;
+}
+@media (max-width: 992px)
+{
+  #coach-header { height: 40px; }
+}
+#coach-header.fixed-top { background: rgba(0, 0, 0, 0.85); }
+
+#coach-header .logo
+{
+    font-size: 30px;
+    margin: auto;
+    padding: 0;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#coach-header .logo a { color: #fff; }
+
+
+/*COACH-HOME*/
+.wrapper{
+    display: flex;
+    position: relative;
+}
+
+.wrapper .sidebar h4{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wrapper .sidebar{
+    position:sticky;
+    top:0;
+    text-decoration: none;
+    width: 230px;
+    background: #131313e3 ;
+    z-index: 10;
+    /* padding: 10px 0; */
+}
+
+.wrapper .sidebar .clublogo{
+    position:sticky;
+    top:50px;
+    text-align: center;
+}
+
+.wrapper .sidebar .clublogo h4{
+    position:sticky;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.wrapper .sidebar img{
+    height: 210px;
+    width: 220px;
+}
+
+.wrapper .sidebar ul{
+    position:sticky;
+    top:350px;
+    padding-left: 0%;
+}
+
+.wrapper .sidebar ul li{
+    list-style-type: none;
+    padding: 13px;
+    font-size: 0.8rem;
+}
+.wrapper .sidebar ul li:hover, .wrapper .sidebar .active{
+    background-color: black;
+}
+
+.wrapper .sidebar ul li a{
+    color: aliceblue;
+    display: block;
+}
+.wrapper .sidebar ul li:hover a, .wrapper .sidebar .active a{
+    color: rgb(0, 195, 255);
+}
+
+.wrapper .sidebar ul li a .bi{
+    width: 25px;
+    padding-right: 20px;
+    padding-left: 15px;
+}
+
+.coach-dashboard{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr) 650px;
+    grid-template-rows: 100px 270px 400px ;
+    overflow: hidden;
+}
+
+.coach-dashboard .welcome{
+    grid-column: 1/3;
+    font-size: 30px;
+    padding-top:25px;
+    padding-left: 30%;
+    text-transform: capitalize;
+}
+
+.count-container{
+    position: relative;
+    background-color: rgb(59, 59, 59);
+    border-radius: 5%;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    color: cornsilk;
+}
+
+.coach-dashboard .div1 button{
+    position: relative;
+    top: 10px;
+    width: 250px;
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.coach-dashboard .div2 button{
+    position: relative;
+    top: 10px;
+    width: 250px;
+    margin: 10px 30px;
+}
+
+.count-container:hover span,
+.count-container:hover{
+    color: rgb(0, 195, 255);
+}
+
+.count-container:hover  {
+    background-color: rgb(0, 0, 0);
+}
+
+#piechart{
+    text-align: center;
+    grid-column: 1/3;
+}
+
+.coach-dashboard .profile{
+    /* background-color: rgba(0, 0, 0, 0.329); */
+    grid-column: 3/4;
+    grid-row: 1/4;
+}
+
+.coach-dashboard .profile .profile-container,
+.guest-view-club .div2 .coach-profile .profile .profile-container{
+    /* display:grid; */
+    position: relative;
+    /* background-color: rgba(0, 195, 255, 0.432); */
+    background-color: rgba(0, 0, 0, 0.863);
+    height: 90vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 93%;
+    margin: 20px 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.guest-view-club .div2 .coach-profile .profile .profile-container{
+    height: auto;
+    overflow: hidden;
+}
+
+/* .coach-dashboard .profile .profile-container::-webkit-scrollbar { display:none; } */
+
+.coach-dashboard .profile .profile-container dl.row,
+.guest-view-club .div2 .coach-profile .profile .profile-container dl.row{
+    --bs-gutter-x: 0 rem;
+}
+
+.coach-dashboard .profile .profile-container .profile-session dl.row dt{
+    color: rgb(194, 194, 194);
+    font-size: 18px;
+    padding-left: 30px;
+}
+
+.coach-dashboard .profile .profile-container .profile-content dl.row dt,
+.guest-view-club .div2 .coach-profile .profile .profile-container .profile-content dl.row dt    {
+    padding-left: 10px;
+}
+
+.coach-dashboard .profile .profile-container dl.row dd,
+.guest-view-club .div2 .coach-profile .profile .profile-container dl.row dd
+{
+    font-size: 18px;
+    color: rgb(143, 143, 143);
+}
+.coach-dashboard .profile .profile-container .divider,
+.guest-view-club .div2 .coach-profile .profile .profile-container .divider{
+    background-color: rgba(0, 195, 255, 0.432);
+    height: 4px;
+    width: 95%;
+    margin: 10px 10px;
+}
+
+.coach-dashboard .profile .profile-container .head,
+.guest-view-club .div2 .coach-profile .profile .profile-container .head{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+.coach-dashboard .profile .profile-container .profile-div1,
+.guest-view-club .div2 .coach-profile .profile .profile-container .profile-div1{
+    display:grid;
+    height: auto;
+    grid-template-columns: 250px repeat(1,1fr);
+    grid-template-rows: 250px repeat(1,1fr);
+    margin-left: 10px;
+    margin-top:5px;
+}
+.coach-dashboard .profile .profile-container .profile-div1 .profile-img img,
+.guest-view-club .div2 .coach-profile .profile .profile-container .profile-div1 .profile-img img{
+    height:250px;
+    width: 250px;
+}
+.coach-dashboard .profile .profile-container .profile-content,
+.guest-view-club .div2 .coach-profile .profile .profile-container .profile-content{
+    color: rgb(199, 199, 199);
+    height: 350px;
+    font-size: 18px;
+    
+}
+
+.coach-dashboard .profile .profile-container .profile-div1 .profile-session,
+.guest-view-club .div2 .coach-profile .profile .profile-container .subcoaches    {
+    grid-column: 1/3;
+    padding-top: 5%;
+    height:auto;
+    overflow: auto;
+}
+
+.coach-dashboard .profile .profile-container .divider1,
+.guest-view-club .div2 .coach-profile .profile .profile-container .divider1    {
+    background-color: rgba(0, 195, 255, 0.432);
+    height: 4px;
+    width: 98%;
+    margin: 10px 0px;
+}
+
+.coach-dashboard .profile .profile-container .profile-session h5,
+.coach-dashboard .profile .profile-container .subcoaches h5,
+.guest-view-club .div2 .coach-profile .profile .profile-container .subcoaches h5    {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 5px;
+}
+
+.coach-dashboard .profile .profile-container .profile-session button.edit-coach{
+    position: relative;
+    margin-left: -50px;
+    left: 50%;
+    width: 70px;
+    bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #000000;
+    border: 2px solid #ffffff;
+    color: #fff;
+}
+
+.coach-dashboard .profile .profile-container .profile-session button.edit-coach:hover{
+    background: #646464;
+    border: 2px solid #fff;
+    color: #fff;
+    box-shadow: 10px 10px 8px #020202;
+}
+
+/* ADMIN DASHBOARD*/
+.coach-dashboard .admin-profile{
+    grid-column: 3/4;
+    grid-row: 1/4;
+}
+.coach-dashboard .admin-profile .admin-profile-container{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.863);
+    height: auto;
+    width: 95%;
+    margin: 20px;
+    padding: 10px;
+}
+
+.coach-dashboard .admin-profile .admin-profile-container .post-noti-admin textarea{
+    width: 100%;
+    min-height: 60px;
+    font-size: 18px;
+    max-height: 100px;
+}
+
+.coach-dashboard .admin-profile .admin-profile-container .divider{
+    background-color: rgba(0, 195, 255, 0.432);
+    height: 4px;
+    width: 95%;
+    margin: 10px 10px;
+}
+.coach-dashboard .admin-profile .club-data .divider{
+    position: sticky;
+    background-color: rgba(0, 195, 255, 0.432);
+    height: 3px;
+    width: 95%;
+    margin: 10px 10px;
+}
+
+.coach-dashboard .admin-profile .admin-profile-container .head{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+.coach-dashboard .admin-profile .admin-profile-container .admin-info{
+    padding-left: 100px;
+    color: rgb(134, 134, 134);
+}
+
+.coach-dashboard .admin-profile .club-data{
+    background-color: rgba(0, 0, 0, 0.863);
+    height: auto;
+    max-height: 40%;
+    width: 95%;
+    margin: 20px;
+    padding: 10px;
+    overflow: auto;
+}
+.coach-dashboard .admin-profile .club-data::-webkit-scrollbar { width: 0!important }
+
+.coach-dashboard .admin-profile .club-data .head{
+    position: sticky;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+.coach-dashboard .admin-profile .club-data .club-data-table{
+    font-size: 17px;
+    line-height: 30px;
+    margin: 20px;
+}
+
+.coach-dashboard .admin-profile .edit-admin-profile-btn{
+    position: relative;
+    font-size: 16px;
+    left: 0%;
+    width: 60px;
+    bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #000000;
+    border: 2px solid #ffffff;
+    color: #fff;
+}
+
+.coach-dashboard .admin-profile .edit-admin-profile-btn:hover{
+    background: #646464;
+    border: 2px solid #fff;
+    color: #fff;
+    box-shadow: 10px 10px 8px #020202;
+}
+
+
+/* MEMBER LOGIN STYLES*/
+
+.member-login{
+    /* background-color: aquamarine; */
+    position: relative;
+    width: 85vw;
+    height: 780px;
+    display:grid;
+    grid-template-columns: repeat(1, 1fr) 510px;
+    /* grid-template-rows: 70px 710px ; */
+}
+
+/* .member-login .member-welcome
+{
+    /* background-color: blue; */
+    /*grid-column: 1/-1;
+    font-size: 25px;
+    text-align: center;
+    padding-top:10px;
+} */
+
+.member-login .member-noti
+{
+    background-color: rgb(51, 51, 51);
+    overflow: auto;
+}
+
+.member-login .member-noti::-webkit-scrollbar { width: 0!important }
+
+.member-login .member-noti .tabs{
+    color: #ffffff;
+    display: flex;
+    background-color: rgba(51, 51, 51, 0.884);
+    height: 50px;
+    margin: 0px 10px;
+}
+
+.member-login .member-noti .noti-content{
+   
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right:10px;
+    font-size: 16px;
+}
+
+.member-login .member-profile
+{
+    background-color: rgb(44, 44, 44);
+    margin: 10px 10px;
+    height: 710px;
+}
+
+/* ADMIN NOTIFICATIONS */
+.admin-noti
+{
+    position: relative;
+    width: 87vw;
+    height: 100vh;
+    overflow:auto;
+    background-color: rgb(51, 51, 51);
+}
+
+.admin-noti::-webkit-scrollbar { width: 0!important }
+
+ .admin-noti .tabs{
+    color: #ffffff;
+    display: flex;
+    background-color: rgba(51, 51, 51, 0.884);
+    height: 50px;
+    margin: 0px 10px;
+}
+
+ .admin-noti .noti-content{
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right:10px;
+    font-size: 16px;
+}
+
+.admin-noti .tabs{
+    position: fixed;
+    background-color: rgba(2, 2, 2, 0.918);
+    display: flex;
+    height: 50px;
+    width: 85.5%;
+    padding: 5px ;
+    color: #fff;
+}
+
+.admin-noti .tabs div{
+    position: relative;
+    color: azure;
+    text-transform: uppercase;
+    font-size: 18px;
+    width: calc(70%/4);
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    z-index:2;
+}
+
+/*COACH LOGIN STYLES*/
+
+.coach-login{
+    position: relative;
+    width: 100vw;
+    height: 780px;
+    display:grid;
+    grid-template-columns: repeat(1, 1fr) 400px;
+}
+
+.coach-login .coach-noti
+{
+    background-color: rgb(51, 51, 51);
+    overflow: auto;
+}
+
+.coach-login .coach-noti::-webkit-scrollbar { width: 0!important }
+
+.coach-login .coach-noti .tabs{
+    position: fixed;
+    background-color: rgba(2, 2, 2, 0.918);
+    display: flex;
+    height: 50px;
+    width: 63%;
+    padding: 5px ;
+    color: #fff;
+}
+.member-login .member-noti .tabs{
+    position: fixed;
+    background-color: rgba(2, 2, 2, 0.918);
+    display: flex;
+    height: 50px;
+    width: 55%;
+    padding: 5px ;
+    color: #fff;
+}
+
+.coach-login .coach-noti .tabs div ,
+.member-login .member-noti .tabs div{
+    position: relative;
+    color: azure;
+    text-transform: uppercase;
+    font-size: 18px;
+    width: calc(50%/3);
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    z-index:2;
+}
+
+.coach-login .coach-noti .tabs div:hover ,
+.member-login .member-noti .tabs div:hover,
+.admin-noti .tabs div:hover
+{
+    color: cyan;
+}
+
+.coach-login .coach-noti .tabs div.active,
+.member-login .member-noti .tabs div.active,
+.admin-noti .tabs div.active{
+    background-color: black;
+    color: cyan;
+}
+
+.coach-login .coach-noti .tabs .divider-tabs,
+.member-login .member-noti .tabs .divider-tabs,
+.admin-noti .tabs .divider-tabs{
+    background-color: darkcyan;
+    height: 40px;
+    width: 4px;
+}
+
+.coach-login .coach-noti .noti-content{
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.coach-login .team-formed {
+    background-color: rgb(51, 51, 51);
+    margin: 10px;
+    overflow: auto;
+}
+
+.coach-login .team-formed .post-noti{
+    margin: 10px;
+    text-align: center;
+}
+
+.coach-login .team-formed .post-noti button,
+.coach-dashboard .admin-profile .admin-profile-container .post-noti-admin button{
+    background: linear-gradient(#004d5c, #007188);
+    color: white;
+    font-size: 14px;
+    border-radius: 50px;
+    width: calc(90%/2);
+    border: none;
+    text-transform:uppercase;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.coach-dashboard .admin-profile .admin-profile-container .post-noti-admin {
+    text-align: center;
+}
+.coach-dashboard .admin-profile .admin-profile-container .post-noti-admin button{
+    width: calc(70%/2);
+}
+
+.coach-login .team-formed .post-noti button:hover,
+.coach-dashboard .admin-profile .admin-profile-container .post-noti-admin button:hover{
+    background: linear-gradient(#007188,#004d5c);
+    box-shadow: 10px 10px 8px #000000;
+}
+
+.coach-login .team-formed .post-noti textarea{
+    width: 100%;
+    height: 70px;
+    font-size: 18px;
+}
+
+.coach-login .team-formed .divider{
+    background-color: darkcyan;
+    height: 4px;
+    margin: 10px;
+}
+
+.coach-login .team-formed .title{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.coach-login .team-formed .team-formed-table{
+    font-size: 16px;
+    margin: 20px;
+    line-height: 30px;
+}
+
+
+
+/* CHALLENEGE */
+
+.challenge-container{
+    height: 1500px;
+    width:100vw;
+}
+
+.challenge-menu{
+    background-color: rgba(2, 2, 2, 0.644);
+    display: flex;
+    height: 50px;
+    padding: 5px ;
+}
+.challenge-menu .divider{
+    background-color: darkcyan;
+    height: 40px;
+    width: 4px;
+}
+
+.challenge-menu div{
+    position: relative;
+    color: azure;
+    width: calc(50%/2);
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    z-index:2;
+}
+
+.challenge-menu div:hover
+{
+    color: cyan;
+}
+
+.challenge-menu div.active{
+    background-color: black;
+    color: cyan;
+}
+
+.challenge-menu div.active:before{
+    transition: all 300ms ease-in-out;
+}
+
+.challenge-content{
+    position: relative;
+    height: 700px;
+}
+ .challenge-content .challenge-club{
+    display:grid;
+    grid-template-rows: 70px 400px 1000px;
+    grid-template-columns: repeat(2, 1fr);
+ }
+
+ .challenge-content .vs img{
+     position: absolute;
+     top: 7%;
+     left: 40%;
+     height: 230px;
+     width: 250px;
+     z-index: 40;
+ }
+
+.challenge-content .challenge-club .div1{
+    grid-column: 1/-1;
+    background-color: rgb(0, 156, 204);;
+    color: white;
+    position: relative;
+    padding: 15px;
+    font-size: 20px;
+}
+.challenge-content .challenge-club .div2{
+    background-color: rgba(0, 0, 0, 0.863);
+    color: darkgrey;
+    position: relative;
+    padding: 10px;
+    margin: 40px;
+    top:7%;
+    align-content: center;
+    text-align: center;
+}
+
+.challenge-content .challenge-club .div3{
+    background-color: rgba(0, 0, 0, 0.863);
+    position: relative;
+    padding: 50px;
+    margin: 40px;
+    color: white;
+    top:7%;
+    text-align: center;
+    align-content: center;
+}
+
+.challenge-content .challenge-club .div3 #start-time{
+    padding-left: 9%;
+}
+
+.challenge-content .challenge-club .div4{
+    grid-column: 1/-1;
+    background-color: rgba(0, 0, 0, 0.863);
+    margin: 40px;
+    overflow: auto;
+}
+
+.challenge-content .challenge-club .div4 .team-list,
+.team-page-list .team-list,
+.members-page-list .team-list{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: white;
+    text-shadow: #0d0d0d;
+}
+
+.challenge-content .challenge-club .div4 .divider2{
+    background-color: darkcyan;
+    height: 4px;
+    width: 95%;
+    margin: 10px 30px;
+}
+
+.challenge-content .challenge-club .div4 .team-table{
+    margin: 20px 40px;
+    font-size: 15px;
+}
+
+.challenge-content .challenge-club .div4 button{
+    position: relative;
+    background: linear-gradient(#004d5c, #007188);
+    color: white;
+    top:1%;
+    font-size: 20px;
+    width:17%;
+    height: 60px;
+    /* left: 430px; */
+    float: right;
+    right: 30px;
+    border-radius: 50px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+}
+
+.challenge-content .challenge-club .div4 button:hover{
+    background: linear-gradient(#007188,#004d5c);
+    box-shadow: 10px 10px 8px #000000;
+}
+
+.challenge-content .challenge-club .div4 #edit{
+    padding: 40px;
+}
+
+.challenge-content .challenge-club .div4 #edit:hover{
+    text-decoration: underline;
+}
+
+/* VIEW REQ */
+.view-req-container .view-req-content .div1{
+    width: 85vw;
+    background-color: rgb(0, 156, 204);;
+    color: white;
+    position: relative;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.view-req-container .view-req-content .div4{
+    background-color: rgba(0, 0, 0, 0.863);
+    margin: 10px;
+    font-size: 18px;
+}
+
+/* TEAM PAGE   */
+
+.team-page-list{
+    background: #131313e3 ;
+    width: 100vw;
+    height: 1000px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.team-page-list .team-table,
+.members-page-list .members-table{
+    font-size: 17px;
+}
+
+.team-page-list .divider2, .members-page-list .divider2{
+    background-color: darkcyan;
+    height: 4px;
+    width: 97%;
+    margin: 20px;
+}
+
+/* MEMBERS PAGE */
+
+.members-page-list{
+    background: #131313e3 ;
+    width: 100vw;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.member-login .member-profile .divider{
+    height: 10px;
+    background-color: darkcyan;
+    height: 4px;
+    margin: 10px;
+}
+
+.member-login .member-profile .title{
+    text-transform: uppercase;
+    font-weight: 20px;
+    letter-spacing: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+.member-login .member-profile .status{
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.member-login .member-profile .profile-image{
+    text-align: center;
+    padding: 10px;
+}
+.member-login .member-profile .details{
+    color: #979797;
+    margin-left: 90px;
+}
+
+.member-login .member-profile .details .edit-button{
+    text-align: right;
+    position: relative;
+    right: 10%;
+}
+.member-login .member-profile .details .edit-button button{                
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #000000;
+    border: 2px solid #ffffff;
+    color: #fff;
+}
+
+.member-login .member-profile .details .edit-button button:hover{                         
+    background: #646464;
+    border: 2px solid #fff;
+    color: #fff;
+    box-shadow: 10px 10px 8px #020202;
+}
+
+/* EDIT PROFILE */
+.edit-profile-container{
+    margin: 20px;
+    background: #131313e3;
+    height: 700px;
+    width: 2000px;
+}
+
+.edit-profile-container .div1{
+    display:flex;
+}
+.edit-profile-container .div1 .profile-image{
+    padding-top: 50px;
+    /* padding-bottom: 20px; */
+    padding-left: 250px;
+    padding-right: 50px;
+}
+
+.edit-profile-container .div1 .div2{
+    padding-top: 55px;
+    width: 400px;
+}
+
+.edit-profile-container .div1 .div2 h5{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.edit-profile-container .div1 .div2 a{
+    font-size: 16px;
+}
+
+.edit-profile-container .div1 .div2 a:hover{
+    text-decoration: underline;
+}
+
+.edit-profile-container .profile-form{
+    display:flex;
+}
+
+.edit-profile-container .profile-form .form-div1,
+.edit-profile-container .profile-form .form-div2{
+    width: 50%;
+    padding-left: 100px;
+    color: rgb(184, 184, 184);
+}
+
+.edit-profile-container .profile-form h5,
+.edit-profile-container .sub-coaches h5{
+    font-size: 16px;
+    color: rgb(184, 184, 184);
+}
+
+.edit-profile-container .save-btn{
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+}
+.edit-profile-container .save-btn button{                
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #000000;
+    border: 2px solid #ffffff;
+    color: #fff;
+}
+
+.edit-profile-container .save-btn button:hover{                         
+    background: #646464;
+    border: 2px solid #fff;
+    color: #fff;
+    box-shadow: 10px 10px 8px #020202;
+}
+
+#coach-edit-profile{
+    height: auto;
+}
+
+.edit-profile-container .title1,
+.edit-profile-container .title2{
+    text-align: center;
+}
+.edit-profile-container .title1 .divider,
+.edit-profile-container .title2 .divider{
+    background-color: darkcyan;
+    height: 4px;
+    margin: 10px;
+    margin-top: 50px;
+}
+
+.edit-profile-container .title1 h4,
+.edit-profile-container .title2 h4{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.edit-profile-container .sub-coaches{
+    display:flex;
+}
+
+.edit-profile-container .sub-coaches div{
+   width: calc(90%/3);
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+.edit-profile-container .sub-coaches div label{
+    color: rgb(179, 179, 179);
+}
+
+/* ADMIN EDIT PROFILE */
+ .edit-profile-container#admin-edit-profile .title1{
+   padding-top: 40px;
+} 
+
+.edit-profile-container#admin-edit-profile .divider{
+    margin-top: 10px;
+ } 
+
+.edit-profile-container#admin-edit-profile h4{
+    padding-top: 10px;
+}
+
+.edit-profile-container#admin-edit-profile .profile-form{
+    padding-top: 30px;
+}
+
+/* ADMIN SEARCH CLUBS */
+
+.admin-all-clubs{
+    height: 200px;
+    width: 100vw;
+}
+
+.admin-search-bar{
+    position: relative;
+    width: 400px;
+    height: 50px;  
+    z-index: 10;
+    top: 25%;
+    left: 30%;
+  }
+  
+  .admin-all-clubs .admin-search-bar input{
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    padding: 0 60px 0 20px;
+    outline: none;
+  }
+  
+  .admin-all-clubs .admin-search-bar .search-btn
+  {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    background: rgba(0, 0, 0, 0.85); 
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .admin-all-clubs .admin-search-bar .cancel-btn
+  {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    color: #fff;
+    font-size: 25px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+.admin-all-clubs .club-contents{
+    background-color: aqua;
+    height: 500px;
+    width: 87vw;
+}

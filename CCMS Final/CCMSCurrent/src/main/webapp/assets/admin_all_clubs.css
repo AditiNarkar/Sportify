@@ -1,0 +1,289 @@
+/* ADMIN SEARCH CLUBS */
+
+.admin-all-clubs{
+    height: 95vh;
+    width: auto;
+}
+
+.admin-search-bar{
+    position: fixed;
+    width: 400px;
+    height: 50px;
+    z-index: 10;
+    top: 90px;
+    left: 40%;
+  }
+
+  .admin-all-clubs .admin-search-bar input{
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    padding: 0 60px 0 20px;
+    outline: none;
+  }
+
+  .admin-all-clubs .admin-search-bar .search-btn
+  {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    background: rgba(0, 0, 0, 0.85);
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  .admin-all-clubs .admin-search-bar .cancel-btn
+  {
+    position: absolute;
+    top: 40%;
+    right: -30px;
+    color: #fff;
+    font-size: 25px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+.admin-all-clubs .club-contents{
+    /* position: absolute; */
+     background-color:white;
+    height: 100%;
+    width: 100%;
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: auto;
+    z-index: 10;
+
+
+}
+
+.admin-all-clubs .club-contents::-webkit-scrollbar { width: 0!important }
+
+.admin-all-clubs .club-contents .new-club{
+ /* background: (black, #007188) ; */
+ background: linear-gradient(black,aqua);
+  position: relative;
+  margin: 20px;
+  padding-top: 40px;
+  width: 300px;
+  height: 280px;
+  /* border: 2px inset black; */
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 10px 10px 10px black;
+  overflow: hidden;
+
+}
+.admin-all-clubs .club-contents .new-club img{
+  height: 200px;
+
+}
+.admin-all-clubs .club-contents .new-club .image_overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 40%;
+  left: 0%;
+
+}
+.admin-all-clubs .club-contents .new-club .image_overlay::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background: linear-gradient(black,#004d5c);
+  position: absolute;
+  /* bottom: 50%;  */
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: all 0.5s;
+  opacity: 0;
+
+
+}
+.admin-all-clubs .club-contents .new-club .image_overlay::before{
+  top: -20%;
+
+}
+.admin-all-clubs .club-contents .new-club .image_overlay::after{
+   bottom: 100px;
+}
+.admin-all-clubs .club-contents .new-club:hover .image_overlay::before{
+  top: 40%;
+  opacity: 0.9;
+}
+.admin-all-clubs .club-contents .new-club:hover .image_overlay::after{
+   bottom: 40%;
+   opacity: 0.9;
+
+}
+.admin-all-clubs .club-contents .new-club .image_overlay .overlay_content{
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  top: -10%;
+  bottom: 50%;
+  left: -10%;
+  right: 0%;
+  margin: 5px 5px 5px 5px  ;
+  padding: 5px 5px 5px 45px ;
+  z-index: 10;
+  text-align: justify;
+  opacity: 0;
+  transform: rotate(90deg);
+  transition: all 0.5s;
+}
+.admin-all-clubs .club-contents .new-club:hover .image_overlay .overlay_content{
+  opacity: 1;
+  transform: rotate(0deg);
+}
+.admin-all-clubs .club-contents .new-club .image_overlay .overlay_content .social{
+  padding: 0px 0px 0px 3px;
+  /* margin-bottom: 20px; */
+}
+
+.admin-all-clubs .club-contents .new-club .image_overlay .overlay_content .social .List{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  padding:5px 5px 5px 5px;
+  font-size: 27px;
+  margin: 10px;
+}
+
+.admin-all-clubs .add-btn{
+  position: fixed;
+  margin-top: 30px;
+    background: linear-gradient(#004d5c, #007188);
+    color: white;
+    top:3%;
+    font-size: 20px;
+    width:17%;
+    height: 60px;
+    /* left: 430px; */
+    float: right;
+    right: 30px;
+    border-radius: 50px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    z-index: 10;
+}
+.admin-all-clubs .add-btn:hover{
+  background: linear-gradient(#007188,#004d5c);
+  box-shadow: 10px 10px 8px #000000;
+}
+.admin-all-clubs .shop-contents{
+  height: 100%;
+    width: 100%;
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: auto;
+
+}
+.admin-all-clubs .shop-contents::-webkit-scrollbar { width: 0!important }
+.admin-all-clubs .shop-contents .products{
+   /* background: linear-gradient(black,aqua); */
+  background: #fff;
+  position: relative;
+  margin: 20px;
+  padding-top: 0px;
+  width: 700px;
+  height: 300px;
+  /* border: 2px inset black; */
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 10px 10px 10px black;
+  overflow: hidden;
+  
+
+}
+.admin-all-clubs .shop-contents .products{
+  background: linear-gradient(black, rgb(65, 6, 65));
+  /* background: white; */
+  display: grid;
+  grid-template-columns: 50% 50%;
+  
+
+}
+.admin-all-clubs .shop-contents .products .products_item{
+  height: 300px;
+  /* margin: auto; */
+  display: flex;
+  justify-content: center;
+
+}
+.admin-all-clubs .shop-contents .products .products_item img{
+  width: 350px;
+   /* height: 90%; */
+ /* padding: 15px 2px 15px 2px; */
+ /*vertical-align: auto;*/
+}
+.admin-all-clubs .shop-contents .products .product_desc{
+  margin-right: 15px;
+}
+.admin-all-clubs .shop-contents .products .product_desc h2#description{
+  color: #fff;
+  /*border: 2px solid  black ;*/
+  height: 50px;
+  margin-top: 10%;
+  margin-right: 5%;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  text-indent: 2px;
+}
+.admin-all-clubs .shop-contents .products .product_desc h2#Price{
+  color: #fff;
+  text-align: left;
+  font-size: 2opx;
+  margin-bottom: 10px;
+}
+.admin-all-clubs .shop-contents .products .product_desc .Menu{
+display: grid;
+grid-template-columns: 50% 50%;
+justify-content: space-between;
+}
+.admin-all-clubs .shop-contents .products .product_desc .Menu .Size select{
+  background: plum;
+  width: 80%;
+  height: 50px;
+  /* margin-top: 20px; */
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+ } 
+ .admin-all-clubs .shop-contents .products .product_desc .Menu .Club select {
+  background: plum;
+  width: 100%;
+  height: 50px;
+  /* margin-top: 20px; */
+  text-align: center;
+  font-size: 18px;
+  border-radius: 10px;
+ }   
+  
+ .admin-all-clubs .shop-contents .products .product_desc .btn_C{
+   margin: 20px;
+   width: 90%;
+   height: 50px;
+   margin-left: 10px;
+   border-radius: 30px;
+   letter-spacing: 2px;
+   font-size: 20px;
+   background: chocolate;
+ }
