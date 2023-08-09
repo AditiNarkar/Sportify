@@ -329,7 +329,7 @@ Shop section opens 3D model that changes logo when clicked on the club’s logo:
 
 ## Contributers
 
-[Tufayl Dalvi](https://github.com/Tufayl18) + 1
+[Tufayl Dalvi](https://github.com/Tufayl18) (Suggested working and made database), Aatmaja Joshi ( worked with verge3D model ) + 1
 
 ## Contact
 
