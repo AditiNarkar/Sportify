@@ -290,8 +290,7 @@ Shop section opens 3D model that changes logo when clicked on the club’s logo:
 
 ## Contributers
 
-- [Tufayl Dalvi](https://github.com/Tufayl18)
-- [Aditya Kachare](https://github.com/Adityakachare)
+[Tufayl Dalvi](https://github.com/Tufayl18) + 1
 
 ## Contact
 
